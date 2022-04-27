@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/wslidera/db" VERSION="20140724" COMMENT="XMLDB file for Moodle local/wslidera"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+    <TABLES>
+        <TABLE NAME="local_wslidera_seeds" COMMENT="tabla de templates.">
+            <FIELDS>
+                <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+                <FIELD NAME="shortname_course" TYPE="text"  NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+                <FIELD NAME="shortname_parent" TYPE="text" NOTNULL="true" SEQUENCE="false" />
+                <FIELD NAME="status" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" />
+                <FIELD NAME="timecreated" TYPE="int" LENGTH="12" NOTNULL="true" SEQUENCE="false" />
+                <FIELD NAME="timemodified" TYPE="int" LENGTH="12" NOTNULL="true" SEQUENCE="false"/>
+            </FIELDS>
+            <KEYS>
+                <KEY NAME="primary" TYPE="primary" FIELDS="id" COMMENT="The unique id for this local_curriculum_template instance."/>
+            </KEYS>
+        </TABLE>
+    </TABLES>
+</XMLDB>
